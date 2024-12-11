@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Daily Bugle</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="theme.css">
+</head>
+<body>
+    <!-- Dark/Light Mode Toggle -->
+    <div class="theme-toggle" aria-label="Toggle dark mode">
+        🌙
+    </div>
+
+    <!-- Header Section -->
+    <header>
+        <h1>The Daily Bugle</h1>
+        <p>Your go-to source for daily news updates!</p>
+    </header>
+
+    <!-- News Category Selector -->
+    <div class="category-selector">
+        <label for="category-select">Choose Category:</label>
+        <select id="category-select">
+            <option value="general">General</option>
+            <option value="business">Business</option>
+            <option value="technology">Technology</option>
+            <option value="health">Health</option>
+            <option value="science">Science</option>
+            <option value="sports">Sports</option>
+            <option value="entertainment">Entertainment</option>
+        </select>
+    </div>
+
+    <!-- News Section -->
+    <div id="news-container"></div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 The Daily Bugle. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="theme.js"></script>
+</body>
+</html>

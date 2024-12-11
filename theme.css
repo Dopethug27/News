@@ -1,0 +1,45 @@
+/* Basic Styles (Light Mode) */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    background-image: url('samsung-galaxy-tab-3840x2160-19353.png'); /* Light mode background */
+    background-size: cover;
+    background-position: center;
+    transition: background-color 0.3s, color 0.3s, background-image 0.3s;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+    background-image: url('gradient-background-3840x2160-11027.jpg'); /* Dark mode background */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Dark Mode Toggle Button */
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 1.5rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 100;
+    transition: background 0.3s ease-in-out;
+    padding: 10px;
+}
+
+body.dark-mode .theme-toggle {
+    background-color: #444;
+    color: #fff;
+    border-radius: 50%;
+}
+
+body.dark-mode .theme-toggle:hover {
+    background-color: #666;
+}
